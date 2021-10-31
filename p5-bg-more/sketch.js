@@ -20,6 +20,7 @@ function setup() {
     let x_speed = random(-MAX_SPEED, MAX_SPEED);
     let y_speed = random(-MAX_SPEED, MAX_SPEED);
     let num_rings = int(random(1, 3));
+    let spread_offset = random(20, 40);
     circles[i] = new Circle(
       x,
       y,
@@ -27,7 +28,8 @@ function setup() {
       stroke_weight,
       x_speed,
       y_speed,
-      num_rings
+      num_rings,
+      spread_offset
     );
   }
 }
@@ -48,7 +50,7 @@ function windowResized() {
 }
 
 class Circle {
-  constructor(x, y, r, sw, x_speed, y_speed, num_rings) {
+  constructor(x, y, r, sw, x_speed, y_speed, num_rings, spread_offset) {
     this.x = x;
     this.y = y;
     this.r = r;
@@ -56,7 +58,7 @@ class Circle {
     this.x_s = x_speed;
     this.y_s = y_speed;
     this.num_rings = num_rings;
-    console.log(num_rings);
+    this.spread_offset = spread_offset;
   }
 
   run() {
@@ -65,7 +67,7 @@ class Circle {
     strokeWeight(this.sw);
     ellipse(this.x, this.y, this.r);
     if (this.num_rings === 2) {
-      ellipse(this.x, this.y, this.r + 20);
+      ellipse(this.x, this.y, this.r + this.spread_offset);
     }
     this.x += this.x_s;
     this.y += this.y_s;
