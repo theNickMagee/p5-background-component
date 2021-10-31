@@ -6,9 +6,9 @@ function setup() {
   var myCanvas = createCanvas(width, height);
   myCanvas.parent("sketch");
 
-  var CIRCLES_NUM = 17;
-  let MIN_R = 20;
-  let MAX_R = 100;
+  var CIRCLES_NUM = 5;
+  let MIN_R = 100;
+  let MAX_R = 300;
   let MAX_SPEED = 1;
   circles = [];
   for (let i = 0; i < CIRCLES_NUM; i++) {
