@@ -42,6 +42,12 @@ body {
 
   display: flex;
   flex-wrap: wrap;
+
+  transition: all 0.5s ease-in-out;
+}
+
+.content-container:hover {
+  /* background-color: rgba(255, 0, 0, 0.267); */
 }
 
 .content-item {
@@ -62,7 +68,23 @@ body {
   justify-content: center;
   text-transform: uppercase;
   font-size: large;
-  letter-spacing: 1rem;
+  letter-spacing: 1.8rem;
+
+  /* HOVER EFFECT */
+  transition: all 0.2s ease-in;
+
+  /* HAND */
+  cursor: pointer;
+}
+
+.content-item:hover {
+  transform: scaleX(1.01);
+  box-shadow: none;
+  background-color: rgba(255, 0, 0, 0.808);
+  letter-spacing: 2rem;
+  z-index: 10;
+
+  box-shadow: 1px 1px 140px 1px rgba(112, 112, 112, 0.555);
 }
 
 @media screen and (max-width: 600px) {
