@@ -4,26 +4,3 @@
   padding: 0;
   margin: 0;
 }
-
-.home-nav-bg-container {
-  background-color: brown;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-}
-
-.nav-content-container {
-  /* background-color: black; */
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-
-  display: flex;
-  flex-wrap: wrap;
-
-  transition: all 0.5s ease-in-out;
-}

@@ -15,7 +15,7 @@
   justify-content: center;
   text-transform: uppercase;
   font-size: large;
-  letter-spacing: 1.8rem;
+  letter-spacing: 1.3rem;
 
   /* HOVER EFFECT */
   transition: all 0.2s ease-in;
@@ -28,7 +28,7 @@
   transform: scaleX(1.01);
   box-shadow: none;
   /* background-color: rgba(255, 0, 0, 0.808); */
-  letter-spacing: 2rem;
+  letter-spacing: 1.5rem;
   z-index: 10;
   color: black;
   box-shadow: 1px 1px 140px 1px rgba(112, 112, 112, 0.555);

@@ -53,7 +53,7 @@ class Circle {
   }
 }
 
-var CIRCLES_NUM = 16;
+var CIRCLES_NUM = 7;
 let MIN_R = 40;
 let MAX_R = 200;
 let MAX_SPEED = 1;
@@ -82,7 +82,7 @@ for (let i = 0; i < CIRCLES_NUM; i++) {
   );
 }
 
-const SquareNavigation = ({ parentRef }) => {
+const SquareNavigation = ({}) => {
   // const [circles, setCircles] = useState([]);
 
   const sketch = (p5) => {
@@ -91,8 +91,8 @@ const SquareNavigation = ({ parentRef }) => {
     };
 
     p5.draw = () => {
-      console.log(circles);
-      p5.background(156, 197, 255);
+      // console.log(circles);
+      p5.background(80); //156, 197, 255
       //   p5.fill(255, 0, 0);
       //   p5.rect(0, 0, 50, 50);
       for (let i = 0; i < circles.length; i++) {

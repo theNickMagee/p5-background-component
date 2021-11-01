@@ -28,7 +28,7 @@ const NavItem = ({ color, label, link }) => {
         to={link}
         style={{
           textDecoration: "none",
-          color: mouseHovered ? "black" : "white",
+          color: "white",
         }}
       >
         {label}
