@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+
 import "./NavItem.css";
 
-const NavItem = ({ color, label }) => {
+const NavItem = ({ color, label, link }) => {
   const [mouseHovered, setMouseHovered] = useState(false);
 
   const handleMouseEnter = () => {
@@ -22,7 +24,15 @@ const NavItem = ({ color, label }) => {
       onMouseOver={handleMouseEnter}
       onMouseOut={handleMouseExit}
     >
-      {label}
+      <Link
+        to={link}
+        style={{
+          textDecoration: "none",
+          color: mouseHovered ? "black" : "white",
+        }}
+      >
+        {label}
+      </Link>
     </div>
   );
 };

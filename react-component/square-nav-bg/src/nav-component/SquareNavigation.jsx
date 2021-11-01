@@ -53,7 +53,7 @@ class Circle {
   }
 }
 
-var CIRCLES_NUM = 8;
+var CIRCLES_NUM = 16;
 let MIN_R = 40;
 let MAX_R = 200;
 let MAX_SPEED = 1;
@@ -92,7 +92,7 @@ const SquareNavigation = ({ parentRef }) => {
 
     p5.draw = () => {
       console.log(circles);
-      p5.background(207);
+      p5.background(156, 197, 255);
       //   p5.fill(255, 0, 0);
       //   p5.rect(0, 0, 50, 50);
       for (let i = 0; i < circles.length; i++) {
