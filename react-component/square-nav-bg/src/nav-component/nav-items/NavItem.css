@@ -1,0 +1,35 @@
+.nav-content-item {
+  backdrop-filter: blur(2px);
+  flex-grow: 1;
+  /* margin: 10px; */
+
+  /* outline: 1px solid white; */
+
+  box-shadow: 1px 1px 0px 1px white;
+
+  flex: 1 0 calc(33% - 10px);
+
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: large;
+  letter-spacing: 1.8rem;
+
+  /* HOVER EFFECT */
+  transition: all 0.2s ease-in;
+
+  /* HAND */
+  cursor: pointer;
+}
+
+.nav-content-item:hover {
+  transform: scaleX(1.01);
+  box-shadow: none;
+  /* background-color: rgba(255, 0, 0, 0.808); */
+  letter-spacing: 2rem;
+  z-index: 10;
+
+  box-shadow: 1px 1px 140px 1px rgba(112, 112, 112, 0.555);
+}
